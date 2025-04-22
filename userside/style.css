@@ -1,0 +1,272 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #000000;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  color: #ff6347 !important;
+}
+
+.form-control {
+  background-color: #333333;
+  border: none;
+  color: #ffffff;
+}
+
+.btn-outline-success {
+  color: #ffffff;
+  border-color: #ff6347;
+}
+
+.btn-outline-success:hover {
+  background-color: #ff6347;
+  border-color: #ff6347;
+}
+
+.fa-user {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+      font-size: 1.2rem;
+  }
+  .form-inline {
+      width: 100%;
+      justify-content: center;
+  }
+  .form-control {
+      width: 100%;
+  }
+  .btn-outline-success {
+      width: 20%;
+  }
+  .navbar-toggler {
+      margin-left: auto;
+  }
+  .navbar-nav .nav-link {
+      font-size: 0.9rem;
+  }
+  .fa-user {
+      font-size: 1.2rem;
+  }
+}
+
+/* Footer Styles */
+footer {
+  padding: 20px 0;
+}
+
+footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color: #ff6347;
+}
+
+footer .fa {
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+footer .fa:hover {
+  color: #ff6347;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Home Page Styles */
+.hero-section {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../thumb/images.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal-content {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.modal-header .close {
+  color: #ffffff;
+}
+
+.modal-body .form-group label {
+  color: #ffffff;
+}
+
+.modal-body .form-control {
+  background-color: #333333;
+  border: none;
+  color: #ffffff;
+}
+
+.modal-body .btn-primary {
+  background-color: #ff6347;
+  border-color: #ff6347;
+}
+
+.modal-body .btn-primary:hover {
+  background-color: #ff4500;
+  border-color: #ff4500;
+}
+
+.modal-body .text-primary {
+  color: #ff6347 !important;
+}
+
+/* About Us Page Styles */
+.about-us img {
+  width: 100%;
+  height: 60vh;
+  border-radius: 10px;
+}
+
+.about-us h2 {
+  margin-top: 20px;
+}
+
+.about-us p {
+  margin-bottom: 20px;
+}
+
+/* Movies Page Styles */
+.movies-page {
+  padding: 50px 0;
+}
+
+.category-filter {
+  margin-bottom: 30px;
+}
+
+#categoryFilter {
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+}
+
+.movie-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  background-color: #1c1c1c;
+  border: 1px solid #444;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card-title, .card-text {
+  color: #fff;
+}
+
+.btn-info, .btn-primary {
+  margin-top: 10px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Movie Detail Page Styles */
+.movie-detail-page {
+  position: relative;
+  background-size: cover;
+  color: #ffffff;
+  padding: 5vh 0;
+}
+.movie-detail-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+.movie-detail-content h1 {
+  color: #e50914;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.movie-detail-content p {
+  font-size: 1.2rem;
+}
+.movie-detail-content .btn-primary {
+  background-color: #e50914;
+  border-color: #e50914;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.movie-detail-content .btn-primary:hover {
+  background-color: #b20710;
+  border-color: #b20710;
+}
+.movie-detail-page img.mdim {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+.watch-movie-page video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
